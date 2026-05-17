@@ -25,7 +25,10 @@ This repository is organized as a three-stage hardware project:
 |-- assets/
 |   |-- architecture_block_diagram.png
 |   |-- fsm_control_diagram.png
-|   |-- verification_regression_summary.png
+|   |-- stage_a_port0_waveform_X31.png
+|   |-- stage_a_port0_waveform_X32.png
+|   |-- stage_a_port0_waveform_X33.png
+|   |-- functional_coverage_100_percent.png
 |   |-- implementation_qor_summary.png
 |   `-- gate_level_simulation_success.png
 |-- part_a_design/
@@ -86,6 +89,16 @@ The control path is built around an FSM with idle, route, and transmit states, c
 
 <img src="assets/fsm_control_diagram.png" alt="Finite state machine control logic" width="650">
 
+### Stage A Waveform Validation
+
+The Stage A report includes Port 0 waveform validation, showing signal-level behavior for valid/ready handshaking, source and target routing, payload transfer, and output response.
+
+<img src="assets/stage_a_port0_waveform_X31.png" alt="Stage A Port 0 waveform validation, part 1" width="850">
+
+<img src="assets/stage_a_port0_waveform_X32.png" alt="Stage A Port 0 waveform validation, part 2" width="850">
+
+<img src="assets/stage_a_port0_waveform_X33.png" alt="Stage A Port 0 waveform validation, part 3" width="850">
+
 ## Verification Overview
 
 The Part B environment is a class-based SystemVerilog verification setup. It includes:
@@ -107,9 +120,9 @@ The main regression in `part_b_verification/switch_test.sv` includes:
 6. Broadcast storm
 7. FIFO jam / full-buffer test
 
-The Stage B report includes a regression execution screenshot showing the later stress tests and checker output.
+The Stage B RTL regression reached 100% output success and 100% functional coverage, with 16,300 unique packets sent and 23,676 expected output packets matched without routing errors or dropped packets.
 
-<img src="assets/verification_regression_summary.png" alt="Verification regression summary from Stage B report" width="850">
+<img src="assets/functional_coverage_100_percent.png" alt="Stage B checker and 100 percent functional coverage report" width="520">
 
 ## Results
 
@@ -170,7 +183,8 @@ The README images were extracted directly from the submitted PDF reports:
 
 - `architecture_block_diagram.png`: Part A report, page 3
 - `fsm_control_diagram.png`: Part A report, page 5
-- `verification_regression_summary.png`: Stage B verification report, page 9
+- `stage_a_port0_waveform_X31.png`, `stage_a_port0_waveform_X32.png`, `stage_a_port0_waveform_X33.png`: Part A report, page 10
+- `functional_coverage_100_percent.png`: cropped from Stage B verification report, page 7
 - `implementation_qor_summary.png`: Part C implementation report, page 11
 - `gate_level_simulation_success.png`: Part C implementation report, page 14
 
