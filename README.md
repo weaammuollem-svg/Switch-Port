@@ -18,66 +18,54 @@ This repository is organized as a three-stage hardware project:
 - Verification includes random backpressure, saturation, hotspot, broadcast, FIFO-full, and long-run stress scenarios.
 - Gate-level regression with SDF back-annotation passed successfully.
 
-## Visual Overview
-
-### High-Level Architecture
-
-<img src="assets/architecture_block_diagram.png" alt="Four-port packet switch high-level architecture" width="850">
-
-### FSM Control Logic
-
-<img src="assets/fsm_control_diagram.png" alt="Finite state machine control logic" width="650">
-
-### Implementation View
-
-<img src="assets/implementation_qor_summary.png" alt="Fusion Compiler implementation layout view" width="850">
-
-### Gate-Level Simulation Result
-
-<img src="assets/gate_level_simulation_success.png" alt="Gate-level simulation success report" width="650">
-
 ## Repository Structure
 
 ```text
 .
-├── part_a_design/
-│   ├── packet_pkg.sv
-│   ├── packet_data.sv
-│   ├── port_if.sv
-│   ├── switch_port.sv
-│   ├── switch_4port.sv
-│   ├── testForStageA.sv
-│   └── Part A subbmission.pdf
-├── part_b_verification/
-│   ├── packet_pkg.sv
-│   ├── packet_data.sv
-│   ├── component_base.sv
-│   ├── sequencer.sv
-│   ├── driver.sv
-│   ├── monitor.sv
-│   ├── agent.sv
-│   ├── packet_vc.sv
-│   ├── checker.sv
-│   ├── port_if.sv
-│   ├── switch_port.sv
-│   ├── switch_4port.sv
-│   ├── vc_test.sv
-│   ├── switch_test.sv
-│   ├── run.f
-│   └── Project Report_ Stage B - Verification .pdf
-└── part_c_implementation/
-    ├── switch_4port.sv
-    ├── switch_test.sv
-    ├── switch_4port_netlist.v
-    ├── switch_4port.sdf
-    ├── run.tcl
-    ├── simulation.log
-    ├── area_*.txt
-    ├── power_*.txt
-    ├── timing_*.txt
-    ├── qor_*.txt
-    ├── clock_gating_details.txt
-    └── Four-Port Switch Project_.pdf
+|-- assets/
+|   |-- architecture_block_diagram.png
+|   |-- fsm_control_diagram.png
+|   |-- verification_regression_summary.png
+|   |-- implementation_qor_summary.png
+|   `-- gate_level_simulation_success.png
+|-- part_a_design/
+|   |-- packet_pkg.sv
+|   |-- packet_data.sv
+|   |-- port_if.sv
+|   |-- switch_port.sv
+|   |-- switch_4port.sv
+|   |-- testForStageA.sv
+|   `-- Part A subbmission.pdf
+|-- part_b_verification/
+|   |-- packet_pkg.sv
+|   |-- packet_data.sv
+|   |-- component_base.sv
+|   |-- sequencer.sv
+|   |-- driver.sv
+|   |-- monitor.sv
+|   |-- agent.sv
+|   |-- packet_vc.sv
+|   |-- checker.sv
+|   |-- port_if.sv
+|   |-- switch_port.sv
+|   |-- switch_4port.sv
+|   |-- vc_test.sv
+|   |-- switch_test.sv
+|   |-- run.f
+|   `-- Project Report_ Stage B - Verification .pdf
+`-- part_c_implementation/
+    |-- switch_4port.sv
+    |-- switch_test.sv
+    |-- switch_4port_netlist.v
+    |-- switch_4port.sdf
+    |-- run.tcl
+    |-- simulation.log
+    |-- area_*.txt
+    |-- power_*.txt
+    |-- timing_*.txt
+    |-- qor_*.txt
+    |-- clock_gating_details.txt
+    `-- Four-Port Switch Project_.pdf
 ```
 
 ## Design Overview
@@ -89,6 +77,14 @@ The switch has four independent input/output ports. Each port accepts packets wi
 - `data`: 8-bit payload
 
 The top-level switch aggregates the four port interfaces, calculates effective destination masks, arbitrates requests per output port, and tracks pending multicast destinations until all required outputs are served.
+
+The diagram below comes directly from the Stage A report and shows the high-level data flow from the test environment, through the per-port FIFOs, and into the central routing logic.
+
+<img src="assets/architecture_block_diagram.png" alt="Four-port packet switch high-level architecture" width="850">
+
+The control path is built around an FSM with idle, route, and transmit states, coordinated with round-robin arbitration and output steering.
+
+<img src="assets/fsm_control_diagram.png" alt="Finite state machine control logic" width="650">
 
 ## Verification Overview
 
@@ -111,9 +107,15 @@ The main regression in `part_b_verification/switch_test.sv` includes:
 6. Broadcast storm
 7. FIFO jam / full-buffer test
 
+The Stage B report includes a regression execution screenshot showing the later stress tests and checker output.
+
+<img src="assets/verification_regression_summary.png" alt="Verification regression summary from Stage B report" width="850">
+
 ## Results
 
 Post-implementation gate-level simulation with SDF back-annotation completed successfully:
+
+<img src="assets/gate_level_simulation_success.png" alt="Gate-level simulation success report" width="650">
 
 | Metric | Result |
 | --- | ---: |
@@ -137,6 +139,10 @@ Implementation summary:
 | Clock-gating cells | 141 | 153 |
 | Gated registers | - | 2,196 / 2,202 |
 
+The implementation report also includes a Fusion Compiler view of the final design layout.
+
+<img src="assets/implementation_qor_summary.png" alt="Fusion Compiler implementation layout view" width="850">
+
 ## How to Run
 
 The verification file list is provided in `part_b_verification/run.f`.
@@ -157,6 +163,16 @@ For implementation and gate-level simulation artifacts, see `part_c_implementati
 - SystemVerilog class-based verification
 - Synopsys VCS / Verdi simulation flow
 - Synopsys Fusion Compiler implementation flow
+
+## Image Sources
+
+The README images were extracted directly from the submitted PDF reports:
+
+- `architecture_block_diagram.png`: Part A report, page 3
+- `fsm_control_diagram.png`: Part A report, page 5
+- `verification_regression_summary.png`: Stage B verification report, page 9
+- `implementation_qor_summary.png`: Part C implementation report, page 11
+- `gate_level_simulation_success.png`: Part C implementation report, page 14
 
 ## Author
 
