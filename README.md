@@ -60,7 +60,7 @@ This repository is organized as a three-stage hardware project:
 |   |-- qor_*.txt
 |   |-- clock_gating_details.txt
 |   `-- Four-Port Switch Project_.pdf
-`-- assets/
+`-- readme_assets/
     |-- architecture_block_diagram.png
     |-- fsm_control_diagram.png
     |-- stage_a_port0_waveform_X31.png
@@ -83,21 +83,21 @@ The top-level switch aggregates the four port interfaces, calculates effective d
 
 The diagram below comes directly from the Stage A report and shows the high-level data flow from the test environment, through the per-port FIFOs, and into the central routing logic.
 
-<img src="assets/architecture_block_diagram.png" alt="Four-port packet switch high-level architecture" width="850">
+<img src="readme_assets/architecture_block_diagram.png" alt="Four-port packet switch high-level architecture" width="850">
 
 The control path is built around an FSM with idle, route, and transmit states, coordinated with round-robin arbitration and output steering.
 
-<img src="assets/fsm_control_diagram.png" alt="Finite state machine control logic" width="650">
+<img src="readme_assets/fsm_control_diagram.png" alt="Finite state machine control logic" width="650">
 
 ### Stage A Waveform Validation
 
 The Stage A report includes Port 0 waveform validation, showing signal-level behavior for valid/ready handshaking, source and target routing, payload transfer, and output response.
 
-<img src="assets/stage_a_port0_waveform_X31.png" alt="Stage A Port 0 waveform validation, part 1" width="850">
+<img src="readme_assets/stage_a_port0_waveform_X31.png" alt="Stage A Port 0 waveform validation, part 1" width="850">
 
-<img src="assets/stage_a_port0_waveform_X32.png" alt="Stage A Port 0 waveform validation, part 2" width="850">
+<img src="readme_assets/stage_a_port0_waveform_X32.png" alt="Stage A Port 0 waveform validation, part 2" width="850">
 
-<img src="assets/stage_a_port0_waveform_X33.png" alt="Stage A Port 0 waveform validation, part 3" width="850">
+<img src="readme_assets/stage_a_port0_waveform_X33.png" alt="Stage A Port 0 waveform validation, part 3" width="850">
 
 ## Verification Overview
 
@@ -122,13 +122,13 @@ The main regression in `part_b_verification/switch_test.sv` includes:
 
 The Stage B RTL regression reached 100% output success and 100% functional coverage, with 16,300 unique packets sent and 23,676 expected output packets matched without routing errors or dropped packets.
 
-<img src="assets/functional_coverage_100_percent.png" alt="Stage B checker and 100 percent functional coverage report" width="520">
+<img src="readme_assets/functional_coverage_100_percent.png" alt="Stage B checker and 100 percent functional coverage report" width="520">
 
 ## Results
 
 Post-implementation gate-level simulation with SDF back-annotation completed successfully:
 
-<img src="assets/gate_level_simulation_success.png" alt="Gate-level simulation success report" width="650">
+<img src="readme_assets/gate_level_simulation_success.png" alt="Gate-level simulation success report" width="650">
 
 | Metric | Result |
 | --- | ---: |
@@ -154,7 +154,7 @@ Implementation summary:
 
 The implementation report also includes a Fusion Compiler view of the final design layout.
 
-<img src="assets/implementation_qor_summary.png" alt="Fusion Compiler implementation layout view" width="850">
+<img src="readme_assets/implementation_qor_summary.png" alt="Fusion Compiler implementation layout view" width="850">
 
 ## How to Run
 
