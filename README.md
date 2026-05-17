@@ -18,6 +18,24 @@ This repository is organized as a three-stage hardware project:
 - Verification includes random backpressure, saturation, hotspot, broadcast, FIFO-full, and long-run stress scenarios.
 - Gate-level regression with SDF back-annotation passed successfully.
 
+## Visual Overview
+
+### High-Level Architecture
+
+<img src="assets/architecture_block_diagram.png" alt="Four-port packet switch high-level architecture" width="850">
+
+### FSM Control Logic
+
+<img src="assets/fsm_control_diagram.png" alt="Finite state machine control logic" width="650">
+
+### Implementation View
+
+<img src="assets/implementation_qor_summary.png" alt="Fusion Compiler implementation layout view" width="850">
+
+### Gate-Level Simulation Result
+
+<img src="assets/gate_level_simulation_success.png" alt="Gate-level simulation success report" width="650">
+
 ## Repository Structure
 
 ```text
