@@ -22,15 +22,6 @@ This repository is organized as a three-stage hardware project:
 
 ```text
 .
-|-- assets/
-|   |-- architecture_block_diagram.png
-|   |-- fsm_control_diagram.png
-|   |-- stage_a_port0_waveform_X31.png
-|   |-- stage_a_port0_waveform_X32.png
-|   |-- stage_a_port0_waveform_X33.png
-|   |-- functional_coverage_100_percent.png
-|   |-- implementation_qor_summary.png
-|   `-- gate_level_simulation_success.png
 |-- part_a_design/
 |   |-- packet_pkg.sv
 |   |-- packet_data.sv
@@ -56,19 +47,28 @@ This repository is organized as a three-stage hardware project:
 |   |-- switch_test.sv
 |   |-- run.f
 |   `-- Project Report_ Stage B - Verification .pdf
-`-- part_c_implementation/
-    |-- switch_4port.sv
-    |-- switch_test.sv
-    |-- switch_4port_netlist.v
-    |-- switch_4port.sdf
-    |-- run.tcl
-    |-- simulation.log
-    |-- area_*.txt
-    |-- power_*.txt
-    |-- timing_*.txt
-    |-- qor_*.txt
-    |-- clock_gating_details.txt
-    `-- Four-Port Switch Project_.pdf
+|-- part_c_implementation/
+|   |-- switch_4port.sv
+|   |-- switch_test.sv
+|   |-- switch_4port_netlist.v
+|   |-- switch_4port.sdf
+|   |-- run.tcl
+|   |-- simulation.log
+|   |-- area_*.txt
+|   |-- power_*.txt
+|   |-- timing_*.txt
+|   |-- qor_*.txt
+|   |-- clock_gating_details.txt
+|   `-- Four-Port Switch Project_.pdf
+`-- assets/
+    |-- architecture_block_diagram.png
+    |-- fsm_control_diagram.png
+    |-- stage_a_port0_waveform_X31.png
+    |-- stage_a_port0_waveform_X32.png
+    |-- stage_a_port0_waveform_X33.png
+    |-- functional_coverage_100_percent.png
+    |-- implementation_qor_summary.png
+    `-- gate_level_simulation_success.png
 ```
 
 ## Design Overview
