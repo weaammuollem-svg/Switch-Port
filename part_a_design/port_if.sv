@@ -1,0 +1,38 @@
+interface port_if (input bit clk, input bit rst_n);
+import packet_pkg::*;
+
+logic valid_in;
+logic [3:0] source_in;
+logic [3:0] target_in;
+logic [7:0] data_in;
+logic ready_in;
+
+logic valid_out;
+logic [3:0] source_out;
+logic [3:0] target_out;
+logic [7:0] data_out;
+logic ready_out;
+
+task automatic drive_packet(input packet p);
+	wait (ready_out === 1'b1); 
+	
+	@(posedge clk);
+	valid_in  <= 1;
+	source_in <= p.source;
+	target_in <= p.target;
+	data_in   <= p.data;
+	@(posedge clk);
+	valid_in <= 0;
+endtask
+
+task  automatic collect_packet(output packet p);
+	wait (valid_out === 1'b1 &&ready_in === 1'b1);
+	
+	@(posedge clk);
+	p = new("monitored");
+	p.source = source_out;
+	p.target = target_out;
+	p.data   = data_out;
+	while (valid_out) @(posedge clk);
+endtask
+endinterface

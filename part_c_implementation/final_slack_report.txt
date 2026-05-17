@@ -1,0 +1,686 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 10
+        -report_by design
+Design : switch_4port
+Version: V-2023.12-SP3
+Date   : Mon Jan 19 18:18:58 2026
+****************************************
+
+  Startpoint: sp1/rd_ptr_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sp0/count_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Mode: FUNC
+  Corner: Slow
+  Scenario: FUNC_Slow
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  sp1/rd_ptr_reg[1]/CLK (SDFFARX1_HVT)             0.00      0.00 r
+  sp1/rd_ptr_reg[1]/Q (SDFFARX1_HVT)               0.60      0.60 f
+  ctmi_12993/Y (NAND3X0_RVT)                       0.16      0.75 r
+  phfnr_buf_2751/Y (INVX1_HVT)                     0.29      1.05 f
+  ctmi_13028/Y (AND2X4_RVT)                        0.41      1.46 f
+  ctmi_13632/Y (AO22X1_RVT)                        0.22      1.68 f
+  ctmi_13631/Y (AO221X1_RVT)                       0.14      1.82 f
+  ctmi_13630/Y (AO221X1_RVT)                       0.15      1.97 f
+  ctmi_13629/Y (AO221X1_RVT)                       0.14      2.11 f
+  ctmi_13628/Y (AO221X1_RVT)                       0.17      2.27 f
+  ctmi_13627/Y (AO221X1_RVT)                       0.17      2.44 f
+  ctmi_13624/Y (OR3X2_RVT)                         0.25      2.69 f
+  ctmi_13622/Y (OA222X1_RVT)                       0.22      2.91 f
+  ctmi_2218/Y (AND2X1_RVT)                         0.16      3.08 f
+  phfnr_buf_2770/Y (INVX0_HVT)                     0.13      3.21 r
+  ctmi_13620/Y (NAND2X0_RVT)                       0.16      3.37 f
+  ctmi_2837/Y (OAI221X1_RVT)                       0.34      3.71 r
+  ctmi_13692/Y (NAND2X0_RVT)                       0.10      3.81 f
+  ctmi_13691/Y (AOI21X1_RVT)                       0.17      3.98 r
+  ctmi_13688/Y (OA21X1_RVT)                        0.14      4.13 r
+  phfnr_buf_2794/Y (INVX0_HVT)                     0.23      4.36 f
+  ctmi_2633/Y (NAND2X0_RVT)                        0.26      4.62 r
+  phfnr_buf_2795/Y (INVX0_HVT)                     0.26      4.88 f
+  ctmi_13618/Y (AO222X1_RVT)                       0.25      5.12 f
+  ctmi_2635/Y (AOI222X1_RVT)                       0.35      5.47 r
+  phfnr_buf_2806/Y (INVX0_HVT)                     0.23      5.70 f
+  ctmi_13815/Y (OR3X1_RVT)                         0.22      5.92 f
+  ctmi_13814/Y (AO221X1_RVT)                       0.26      6.18 f
+  ctmi_2640/Y (AOI221X2_RVT)                       0.22      6.40 r
+  ctmi_2643/Y (INVX1_HVT)                          0.23      6.62 f
+  ctmi_13822/Y (NAND2X0_RVT)                       0.32      6.94 r
+  phfnr_buf_2818/Y (INVX1_HVT)                     0.41      7.35 f
+  ctmi_2839/Y (MUX41X1_RVT)                        0.56      7.91 f
+  phfnr_buf_2820/Y (INVX0_HVT)                     0.14      8.05 r
+  ctmi_14766/Y (AND2X1_RVT)                        0.13      8.18 r
+  ctmi_14764/Y (AO221X1_RVT)                       0.18      8.37 r
+  phfnr_buf_2825/Y (INVX0_HVT)                     0.23      8.60 f
+  ctmi_14772/Y (AND4X1_RVT)                        0.38      8.98 f
+  ctmi_14771/Y (AO22X1_RVT)                        0.19      9.17 f
+  ctmi_14758/Y (AO22X1_RVT)                        0.12      9.29 f
+  sp0/count_reg[5]/D (SDFFARX1_HVT)                0.00      9.29 f
+  data arrival time                                          9.29
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  sp0/count_reg[5]/CLK (SDFFARX1_HVT)              0.00     10.00 r
+  clock uncertainty                               -0.15      9.85
+  library setup time                              -0.49      9.36
+  data required time                                         9.36
+  ------------------------------------------------------------------------
+  data required time                                         9.36
+  data arrival time                                         -9.29
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.07
+
+
+
+  Startpoint: sp1/rd_ptr_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sp0/count_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Mode: FUNC
+  Corner: Slow
+  Scenario: FUNC_Slow
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  sp1/rd_ptr_reg[1]/CLK (SDFFARX1_HVT)             0.00      0.00 r
+  sp1/rd_ptr_reg[1]/Q (SDFFARX1_HVT)               0.60      0.60 f
+  ctmi_12993/Y (NAND3X0_RVT)                       0.16      0.75 r
+  phfnr_buf_2751/Y (INVX1_HVT)                     0.29      1.05 f
+  ctmi_13028/Y (AND2X4_RVT)                        0.41      1.46 f
+  ctmi_13632/Y (AO22X1_RVT)                        0.22      1.68 f
+  ctmi_13631/Y (AO221X1_RVT)                       0.14      1.82 f
+  ctmi_13630/Y (AO221X1_RVT)                       0.15      1.97 f
+  ctmi_13629/Y (AO221X1_RVT)                       0.14      2.11 f
+  ctmi_13628/Y (AO221X1_RVT)                       0.17      2.27 f
+  ctmi_13627/Y (AO221X1_RVT)                       0.17      2.44 f
+  ctmi_13624/Y (OR3X2_RVT)                         0.25      2.69 f
+  ctmi_13622/Y (OA222X1_RVT)                       0.22      2.91 f
+  ctmi_2218/Y (AND2X1_RVT)                         0.16      3.08 f
+  phfnr_buf_2770/Y (INVX0_HVT)                     0.13      3.21 r
+  ctmi_13620/Y (NAND2X0_RVT)                       0.16      3.37 f
+  ctmi_2837/Y (OAI221X1_RVT)                       0.34      3.71 r
+  ctmi_13692/Y (NAND2X0_RVT)                       0.10      3.81 f
+  ctmi_13691/Y (AOI21X1_RVT)                       0.17      3.98 r
+  ctmi_13688/Y (OA21X1_RVT)                        0.14      4.13 r
+  phfnr_buf_2794/Y (INVX0_HVT)                     0.23      4.36 f
+  ctmi_2633/Y (NAND2X0_RVT)                        0.26      4.62 r
+  phfnr_buf_2795/Y (INVX0_HVT)                     0.26      4.88 f
+  ctmi_13618/Y (AO222X1_RVT)                       0.25      5.12 f
+  ctmi_2635/Y (AOI222X1_RVT)                       0.35      5.47 r
+  phfnr_buf_2806/Y (INVX0_HVT)                     0.23      5.70 f
+  ctmi_13815/Y (OR3X1_RVT)                         0.22      5.92 f
+  ctmi_13814/Y (AO221X1_RVT)                       0.26      6.18 f
+  ctmi_2640/Y (AOI221X2_RVT)                       0.22      6.40 r
+  ctmi_2643/Y (INVX1_HVT)                          0.23      6.62 f
+  ctmi_13822/Y (NAND2X0_RVT)                       0.32      6.94 r
+  phfnr_buf_2818/Y (INVX1_HVT)                     0.41      7.35 f
+  ctmi_2839/Y (MUX41X1_RVT)                        0.56      7.91 f
+  phfnr_buf_2820/Y (INVX0_HVT)                     0.14      8.05 r
+  ctmi_14766/Y (AND2X1_RVT)                        0.13      8.18 r
+  ctmi_14764/Y (AO221X1_RVT)                       0.18      8.37 r
+  phfnr_buf_2825/Y (INVX0_HVT)                     0.23      8.60 f
+  ctmi_14772/Y (AND4X1_RVT)                        0.38      8.98 f
+  ctmi_14845/Y (AO222X1_RVT)                       0.25      9.24 f
+  sp0/count_reg[4]/D (SDFFARX1_HVT)                0.00      9.24 f
+  data arrival time                                          9.24
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  sp0/count_reg[4]/CLK (SDFFARX1_HVT)              0.00     10.00 r
+  clock uncertainty                               -0.15      9.85
+  library setup time                              -0.50      9.35
+  data required time                                         9.35
+  ------------------------------------------------------------------------
+  data required time                                         9.35
+  data arrival time                                         -9.24
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.11
+
+
+
+  Startpoint: sp1/rd_ptr_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sp1/count_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Mode: FUNC
+  Corner: Slow
+  Scenario: FUNC_Slow
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  sp1/rd_ptr_reg[1]/CLK (SDFFARX1_HVT)             0.00      0.00 r
+  sp1/rd_ptr_reg[1]/Q (SDFFARX1_HVT)               0.60      0.60 f
+  ctmi_12993/Y (NAND3X0_RVT)                       0.16      0.75 r
+  phfnr_buf_2751/Y (INVX1_HVT)                     0.29      1.05 f
+  ctmi_13028/Y (AND2X4_RVT)                        0.41      1.46 f
+  ctmi_13534/Y (AO22X1_RVT)                        0.22      1.68 f
+  ctmi_13533/Y (AO221X1_RVT)                       0.13      1.81 f
+  ctmi_13532/Y (AO221X1_RVT)                       0.14      1.95 f
+  ctmi_13531/Y (AO221X1_RVT)                       0.15      2.10 f
+  ctmi_13530/Y (AO221X1_RVT)                       0.15      2.25 f
+  ctmi_13529/Y (AO221X1_RVT)                       0.17      2.42 f
+  ctmi_13526/Y (OR3X2_RVT)                         0.26      2.68 f
+  ctmi_13524/Y (OA222X1_RVT)                       0.24      2.92 f
+  ctmi_13523/Y (NAND2X0_RVT)                       0.21      3.13 r
+  phfnr_buf_2771/Y (INVX0_HVT)                     0.37      3.50 f
+  ctmi_13520/Y (OA21X1_RVT)                        0.29      3.79 f
+  ctmi_13519/Y (NAND2X0_RVT)                       0.19      3.99 r
+  ctmi_2835/Y (OA221X1_RVT)                        0.26      4.25 r
+  phfnr_buf_2790/Y (INVX0_HVT)                     0.22      4.47 f
+  ctmi_13596/Y (AO221X1_RVT)                       0.26      4.73 f
+  ctmi_13591/Y (NAND2X0_RVT)                       0.26      4.98 r
+  ctmi_2836/Y (MUX41X1_RVT)                        0.37      5.36 f
+  phfnr_buf_2796/Y (INVX0_RVT)                     0.16      5.52 r
+  ctmi_2626/Y (AO222X1_RVT)                        0.33      5.85 r
+  phfnr_buf_2800/Y (INVX0_HVT)                     0.23      6.08 f
+  ctmi_13880/Y (AO221X1_RVT)                       0.30      6.37 f
+  ctmi_13879/Y (NOR4X1_RVT)                        0.33      6.70 r
+  ZBUF_28_inst_2884/Y (NBUFFX2_RVT)                0.15      6.85 r
+  ctmi_13885/Y (NAND2X0_RVT)                       0.13      6.97 f
+  phfnr_buf_2814/Y (INVX0_RVT)                     0.19      7.17 r
+  ctmi_2841/Y (MUX41X1_RVT)                        0.33      7.49 r
+  phfnr_buf_2819/Y (INVX0_HVT)                     0.18      7.67 f
+  ctmi_14055/Y (AND2X1_RVT)                        0.20      7.87 f
+  ctmi_2232/Y (AOI221X1_RVT)                       0.18      8.05 r
+  phfnr_buf_2823/Y (INVX0_HVT)                     0.20      8.25 f
+  ctmi_2842/Y (AO221X1_RVT)                        0.25      8.50 f
+  phfnr_buf_2826/Y (INVX0_HVT)                     0.15      8.65 r
+  ctmi_14777/Y (AND3X1_RVT)                        0.17      8.82 r
+  ctmi_14776/Y (AO222X1_RVT)                       0.25      9.07 r
+  sp1/count_reg[5]/D (SDFFARX1_HVT)                0.00      9.07 r
+  data arrival time                                          9.07
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  sp1/count_reg[5]/CLK (SDFFARX1_HVT)              0.00     10.00 r
+  clock uncertainty                               -0.15      9.85
+  library setup time                              -0.41      9.44
+  data required time                                         9.44
+  ------------------------------------------------------------------------
+  data required time                                         9.44
+  data arrival time                                         -9.07
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.37
+
+
+
+  Startpoint: sp1/rd_ptr_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sp0/count_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Mode: FUNC
+  Corner: Slow
+  Scenario: FUNC_Slow
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  sp1/rd_ptr_reg[1]/CLK (SDFFARX1_HVT)             0.00      0.00 r
+  sp1/rd_ptr_reg[1]/Q (SDFFARX1_HVT)               0.60      0.60 f
+  ctmi_12993/Y (NAND3X0_RVT)                       0.16      0.75 r
+  phfnr_buf_2751/Y (INVX1_HVT)                     0.29      1.05 f
+  ctmi_13028/Y (AND2X4_RVT)                        0.41      1.46 f
+  ctmi_13632/Y (AO22X1_RVT)                        0.22      1.68 f
+  ctmi_13631/Y (AO221X1_RVT)                       0.14      1.82 f
+  ctmi_13630/Y (AO221X1_RVT)                       0.15      1.97 f
+  ctmi_13629/Y (AO221X1_RVT)                       0.14      2.11 f
+  ctmi_13628/Y (AO221X1_RVT)                       0.17      2.27 f
+  ctmi_13627/Y (AO221X1_RVT)                       0.17      2.44 f
+  ctmi_13624/Y (OR3X2_RVT)                         0.25      2.69 f
+  ctmi_13622/Y (OA222X1_RVT)                       0.22      2.91 f
+  ctmi_2218/Y (AND2X1_RVT)                         0.16      3.08 f
+  phfnr_buf_2770/Y (INVX0_HVT)                     0.13      3.21 r
+  ctmi_13620/Y (NAND2X0_RVT)                       0.16      3.37 f
+  ctmi_2837/Y (OAI221X1_RVT)                       0.34      3.71 r
+  ctmi_13692/Y (NAND2X0_RVT)                       0.10      3.81 f
+  ctmi_13691/Y (AOI21X1_RVT)                       0.17      3.98 r
+  ctmi_13688/Y (OA21X1_RVT)                        0.14      4.13 r
+  phfnr_buf_2794/Y (INVX0_HVT)                     0.23      4.36 f
+  ctmi_2633/Y (NAND2X0_RVT)                        0.26      4.62 r
+  phfnr_buf_2795/Y (INVX0_HVT)                     0.26      4.88 f
+  ctmi_13618/Y (AO222X1_RVT)                       0.25      5.12 f
+  ctmi_2635/Y (AOI222X1_RVT)                       0.35      5.47 r
+  phfnr_buf_2806/Y (INVX0_HVT)                     0.23      5.70 f
+  ctmi_13815/Y (OR3X1_RVT)                         0.22      5.92 f
+  ctmi_13814/Y (AO221X1_RVT)                       0.26      6.18 f
+  ctmi_2640/Y (AOI221X2_RVT)                       0.22      6.40 r
+  ctmi_2643/Y (INVX1_HVT)                          0.23      6.62 f
+  ctmi_13822/Y (NAND2X0_RVT)                       0.32      6.94 r
+  phfnr_buf_2818/Y (INVX1_HVT)                     0.41      7.35 f
+  ctmi_2839/Y (MUX41X1_RVT)                        0.56      7.91 f
+  phfnr_buf_2820/Y (INVX0_HVT)                     0.14      8.05 r
+  ctmi_14766/Y (AND2X1_RVT)                        0.13      8.18 r
+  ctmi_14764/Y (AO221X1_RVT)                       0.18      8.37 r
+  phfnr_buf_2825/Y (INVX0_HVT)                     0.23      8.60 f
+  ctmi_14774/Y (AO221X1_RVT)                       0.33      8.93 f
+  sp0/count_reg[3]/D (SDFFARX1_HVT)                0.00      8.93 f
+  data arrival time                                          8.93
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  sp0/count_reg[3]/CLK (SDFFARX1_HVT)              0.00     10.00 r
+  clock uncertainty                               -0.15      9.85
+  library setup time                              -0.50      9.35
+  data required time                                         9.35
+  ------------------------------------------------------------------------
+  data required time                                         9.35
+  data arrival time                                         -8.93
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.42
+
+
+
+  Startpoint: sp1/rd_ptr_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sp1/count_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Mode: FUNC
+  Corner: Slow
+  Scenario: FUNC_Slow
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  sp1/rd_ptr_reg[1]/CLK (SDFFARX1_HVT)             0.00      0.00 r
+  sp1/rd_ptr_reg[1]/Q (SDFFARX1_HVT)               0.60      0.60 f
+  ctmi_12993/Y (NAND3X0_RVT)                       0.16      0.75 r
+  phfnr_buf_2751/Y (INVX1_HVT)                     0.29      1.05 f
+  ctmi_13028/Y (AND2X4_RVT)                        0.41      1.46 f
+  ctmi_13534/Y (AO22X1_RVT)                        0.22      1.68 f
+  ctmi_13533/Y (AO221X1_RVT)                       0.13      1.81 f
+  ctmi_13532/Y (AO221X1_RVT)                       0.14      1.95 f
+  ctmi_13531/Y (AO221X1_RVT)                       0.15      2.10 f
+  ctmi_13530/Y (AO221X1_RVT)                       0.15      2.25 f
+  ctmi_13529/Y (AO221X1_RVT)                       0.17      2.42 f
+  ctmi_13526/Y (OR3X2_RVT)                         0.26      2.68 f
+  ctmi_13524/Y (OA222X1_RVT)                       0.24      2.92 f
+  ctmi_13523/Y (NAND2X0_RVT)                       0.21      3.13 r
+  phfnr_buf_2771/Y (INVX0_HVT)                     0.37      3.50 f
+  ctmi_13520/Y (OA21X1_RVT)                        0.29      3.79 f
+  ctmi_13519/Y (NAND2X0_RVT)                       0.19      3.99 r
+  ctmi_2835/Y (OA221X1_RVT)                        0.26      4.25 r
+  phfnr_buf_2790/Y (INVX0_HVT)                     0.22      4.47 f
+  ctmi_13596/Y (AO221X1_RVT)                       0.26      4.73 f
+  ctmi_13591/Y (NAND2X0_RVT)                       0.26      4.98 r
+  ctmi_2836/Y (MUX41X1_RVT)                        0.37      5.36 f
+  phfnr_buf_2796/Y (INVX0_RVT)                     0.16      5.52 r
+  ctmi_2626/Y (AO222X1_RVT)                        0.33      5.85 r
+  phfnr_buf_2800/Y (INVX0_HVT)                     0.23      6.08 f
+  ctmi_13880/Y (AO221X1_RVT)                       0.30      6.37 f
+  ctmi_13879/Y (NOR4X1_RVT)                        0.33      6.70 r
+  ctmi_13886/Y (OR2X1_RVT)                         0.16      6.86 r
+  phfnr_buf_2815/Y (INVX0_RVT)                     0.14      7.00 f
+  ctmi_2841/Y (MUX41X1_RVT)                        0.40      7.39 f
+  phfnr_buf_2819/Y (INVX0_HVT)                     0.14      7.53 r
+  ctmi_14055/Y (AND2X1_RVT)                        0.14      7.67 r
+  ctmi_2232/Y (AOI221X1_RVT)                       0.19      7.86 f
+  phfnr_buf_2823/Y (INVX0_HVT)                     0.12      7.98 r
+  ctmi_2842/Y (AO221X1_RVT)                        0.22      8.20 r
+  phfnr_buf_2826/Y (INVX0_HVT)                     0.23      8.43 f
+  ctmi_14060/Y (AO21X1_RVT)                        0.29      8.71 f
+  ctmi_14048/Y (OA22X1_RVT)                        0.17      8.88 f
+  sp1/count_reg[4]/D (SDFFARX1_HVT)                0.00      8.88 f
+  data arrival time                                          8.88
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  sp1/count_reg[4]/CLK (SDFFARX1_HVT)              0.00     10.00 r
+  clock uncertainty                               -0.15      9.85
+  library setup time                              -0.50      9.35
+  data required time                                         9.35
+  ------------------------------------------------------------------------
+  data required time                                         9.35
+  data arrival time                                         -8.88
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.47
+
+
+
+  Startpoint: sp1/rd_ptr_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sp3/count_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Mode: FUNC
+  Corner: Slow
+  Scenario: FUNC_Slow
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  sp1/rd_ptr_reg[1]/CLK (SDFFARX1_HVT)             0.00      0.00 r
+  sp1/rd_ptr_reg[1]/Q (SDFFARX1_HVT)               0.60      0.60 f
+  ctmi_12993/Y (NAND3X0_RVT)                       0.16      0.75 r
+  phfnr_buf_2751/Y (INVX1_HVT)                     0.29      1.05 f
+  ctmi_13028/Y (AND2X4_RVT)                        0.41      1.46 f
+  ctmi_13534/Y (AO22X1_RVT)                        0.22      1.68 f
+  ctmi_13533/Y (AO221X1_RVT)                       0.13      1.81 f
+  ctmi_13532/Y (AO221X1_RVT)                       0.14      1.95 f
+  ctmi_13531/Y (AO221X1_RVT)                       0.15      2.10 f
+  ctmi_13530/Y (AO221X1_RVT)                       0.15      2.25 f
+  ctmi_13529/Y (AO221X1_RVT)                       0.17      2.42 f
+  ctmi_13526/Y (OR3X2_RVT)                         0.26      2.68 f
+  ctmi_13524/Y (OA222X1_RVT)                       0.24      2.92 f
+  ctmi_13523/Y (NAND2X0_RVT)                       0.21      3.13 r
+  phfnr_buf_2771/Y (INVX0_HVT)                     0.37      3.50 f
+  ctmi_13520/Y (OA21X1_RVT)                        0.29      3.79 f
+  ctmi_13519/Y (NAND2X0_RVT)                       0.19      3.99 r
+  ctmi_2835/Y (OA221X1_RVT)                        0.26      4.25 r
+  phfnr_buf_2790/Y (INVX0_HVT)                     0.22      4.47 f
+  ctmi_13596/Y (AO221X1_RVT)                       0.26      4.73 f
+  ctmi_13591/Y (NAND2X0_RVT)                       0.26      4.98 r
+  ctmi_2836/Y (MUX41X1_RVT)                        0.37      5.36 f
+  phfnr_buf_2796/Y (INVX0_RVT)                     0.16      5.52 r
+  ctmi_2622/Y (AO222X1_RVT)                        0.31      5.83 r
+  phfnr_buf_2802/Y (INVX0_HVT)                     0.21      6.04 f
+  ctmi_14010/Y (OA21X1_RVT)                        0.24      6.28 f
+  ctmi_14007/Y (NOR4X1_RVT)                        0.28      6.56 r
+  ctmi_2213/Y (OR2X1_RVT)                          0.17      6.73 r
+  phfnr_buf_2809/Y (INVX1_HVT)                     0.30      7.03 f
+  ctmi_2845/Y (MUX41X1_RVT)                        0.58      7.60 f
+  phfnr_buf_2816/Y (INVX0_HVT)                     0.15      7.76 r
+  ctmi_14801/Y (AND2X1_RVT)                        0.14      7.90 r
+  ctmi_2629/Y (AOI221X1_RVT)                       0.19      8.09 f
+  phfnr_buf_2822/Y (INVX1_HVT)                     0.12      8.21 r
+  ctmi_2214/Y (NOR4X1_RVT)                         0.23      8.44 f
+  ctmi_14806/Y (AO22X1_RVT)                        0.16      8.60 f
+  ctmi_14793/Y (AO22X1_RVT)                        0.12      8.72 f
+  sp3/count_reg[5]/D (SDFFARX1_HVT)                0.00      8.72 f
+  data arrival time                                          8.72
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  sp3/count_reg[5]/CLK (SDFFARX1_HVT)              0.00     10.00 r
+  clock uncertainty                               -0.15      9.85
+  library setup time                              -0.49      9.36
+  data required time                                         9.36
+  ------------------------------------------------------------------------
+  data required time                                         9.36
+  data arrival time                                         -8.72
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.64
+
+
+
+  Startpoint: sp1/rd_ptr_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sp3/count_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Mode: FUNC
+  Corner: Slow
+  Scenario: FUNC_Slow
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  sp1/rd_ptr_reg[1]/CLK (SDFFARX1_HVT)             0.00      0.00 r
+  sp1/rd_ptr_reg[1]/Q (SDFFARX1_HVT)               0.60      0.60 f
+  ctmi_12993/Y (NAND3X0_RVT)                       0.16      0.75 r
+  phfnr_buf_2751/Y (INVX1_HVT)                     0.29      1.05 f
+  ctmi_13028/Y (AND2X4_RVT)                        0.41      1.46 f
+  ctmi_13534/Y (AO22X1_RVT)                        0.22      1.68 f
+  ctmi_13533/Y (AO221X1_RVT)                       0.13      1.81 f
+  ctmi_13532/Y (AO221X1_RVT)                       0.14      1.95 f
+  ctmi_13531/Y (AO221X1_RVT)                       0.15      2.10 f
+  ctmi_13530/Y (AO221X1_RVT)                       0.15      2.25 f
+  ctmi_13529/Y (AO221X1_RVT)                       0.17      2.42 f
+  ctmi_13526/Y (OR3X2_RVT)                         0.26      2.68 f
+  ctmi_13524/Y (OA222X1_RVT)                       0.24      2.92 f
+  ctmi_13523/Y (NAND2X0_RVT)                       0.21      3.13 r
+  phfnr_buf_2771/Y (INVX0_HVT)                     0.37      3.50 f
+  ctmi_13520/Y (OA21X1_RVT)                        0.29      3.79 f
+  ctmi_13519/Y (NAND2X0_RVT)                       0.19      3.99 r
+  ctmi_2835/Y (OA221X1_RVT)                        0.26      4.25 r
+  phfnr_buf_2790/Y (INVX0_HVT)                     0.22      4.47 f
+  ctmi_13596/Y (AO221X1_RVT)                       0.26      4.73 f
+  ctmi_13591/Y (NAND2X0_RVT)                       0.26      4.98 r
+  ctmi_2836/Y (MUX41X1_RVT)                        0.37      5.36 f
+  phfnr_buf_2796/Y (INVX0_RVT)                     0.16      5.52 r
+  ctmi_2622/Y (AO222X1_RVT)                        0.31      5.83 r
+  phfnr_buf_2802/Y (INVX0_HVT)                     0.21      6.04 f
+  ctmi_14010/Y (OA21X1_RVT)                        0.24      6.28 f
+  ctmi_14007/Y (NOR4X1_RVT)                        0.28      6.56 r
+  ctmi_2213/Y (OR2X1_RVT)                          0.17      6.73 r
+  phfnr_buf_2809/Y (INVX1_HVT)                     0.30      7.03 f
+  ctmi_2845/Y (MUX41X1_RVT)                        0.58      7.60 f
+  phfnr_buf_2816/Y (INVX0_HVT)                     0.15      7.76 r
+  ctmi_14801/Y (AND2X1_RVT)                        0.14      7.90 r
+  ctmi_2629/Y (AOI221X1_RVT)                       0.19      8.09 f
+  phfnr_buf_2822/Y (INVX1_HVT)                     0.12      8.21 r
+  ctmi_2214/Y (NOR4X1_RVT)                         0.23      8.44 f
+  ctmi_14854/Y (AO222X1_RVT)                       0.22      8.66 f
+  sp3/count_reg[4]/D (SDFFARX1_HVT)                0.00      8.66 f
+  data arrival time                                          8.66
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  sp3/count_reg[4]/CLK (SDFFARX1_HVT)              0.00     10.00 r
+  clock uncertainty                               -0.15      9.85
+  library setup time                              -0.50      9.35
+  data required time                                         9.35
+  ------------------------------------------------------------------------
+  data required time                                         9.35
+  data arrival time                                         -8.66
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.69
+
+
+
+  Startpoint: sp1/rd_ptr_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sp1/count_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Mode: FUNC
+  Corner: Slow
+  Scenario: FUNC_Slow
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  sp1/rd_ptr_reg[1]/CLK (SDFFARX1_HVT)             0.00      0.00 r
+  sp1/rd_ptr_reg[1]/Q (SDFFARX1_HVT)               0.60      0.60 f
+  ctmi_12993/Y (NAND3X0_RVT)                       0.16      0.75 r
+  phfnr_buf_2751/Y (INVX1_HVT)                     0.29      1.05 f
+  ctmi_13028/Y (AND2X4_RVT)                        0.41      1.46 f
+  ctmi_13534/Y (AO22X1_RVT)                        0.22      1.68 f
+  ctmi_13533/Y (AO221X1_RVT)                       0.13      1.81 f
+  ctmi_13532/Y (AO221X1_RVT)                       0.14      1.95 f
+  ctmi_13531/Y (AO221X1_RVT)                       0.15      2.10 f
+  ctmi_13530/Y (AO221X1_RVT)                       0.15      2.25 f
+  ctmi_13529/Y (AO221X1_RVT)                       0.17      2.42 f
+  ctmi_13526/Y (OR3X2_RVT)                         0.26      2.68 f
+  ctmi_13524/Y (OA222X1_RVT)                       0.24      2.92 f
+  ctmi_13523/Y (NAND2X0_RVT)                       0.21      3.13 r
+  phfnr_buf_2771/Y (INVX0_HVT)                     0.37      3.50 f
+  ctmi_13520/Y (OA21X1_RVT)                        0.29      3.79 f
+  ctmi_13519/Y (NAND2X0_RVT)                       0.19      3.99 r
+  ctmi_2835/Y (OA221X1_RVT)                        0.26      4.25 r
+  phfnr_buf_2790/Y (INVX0_HVT)                     0.22      4.47 f
+  ctmi_13596/Y (AO221X1_RVT)                       0.26      4.73 f
+  ctmi_13591/Y (NAND2X0_RVT)                       0.26      4.98 r
+  ctmi_2836/Y (MUX41X1_RVT)                        0.37      5.36 f
+  phfnr_buf_2796/Y (INVX0_RVT)                     0.16      5.52 r
+  ctmi_2626/Y (AO222X1_RVT)                        0.33      5.85 r
+  phfnr_buf_2800/Y (INVX0_HVT)                     0.23      6.08 f
+  ctmi_13880/Y (AO221X1_RVT)                       0.30      6.37 f
+  ctmi_13879/Y (NOR4X1_RVT)                        0.33      6.70 r
+  ZBUF_28_inst_2884/Y (NBUFFX2_RVT)                0.15      6.85 r
+  ctmi_13885/Y (NAND2X0_RVT)                       0.13      6.97 f
+  phfnr_buf_2814/Y (INVX0_RVT)                     0.19      7.17 r
+  ctmi_2841/Y (MUX41X1_RVT)                        0.33      7.49 r
+  phfnr_buf_2819/Y (INVX0_HVT)                     0.18      7.67 f
+  ctmi_14055/Y (AND2X1_RVT)                        0.20      7.87 f
+  ctmi_2232/Y (AOI221X1_RVT)                       0.18      8.05 r
+  phfnr_buf_2823/Y (INVX0_HVT)                     0.20      8.25 f
+  ctmi_14780/Y (AO221X1_RVT)                       0.38      8.63 f
+  sp1/count_reg[3]/D (SDFFARX1_HVT)                0.00      8.63 f
+  data arrival time                                          8.63
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  sp1/count_reg[3]/CLK (SDFFARX1_HVT)              0.00     10.00 r
+  clock uncertainty                               -0.15      9.85
+  library setup time                              -0.50      9.35
+  data required time                                         9.35
+  ------------------------------------------------------------------------
+  data required time                                         9.35
+  data arrival time                                         -8.63
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.72
+
+
+
+  Startpoint: sp1/rd_ptr_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sp3/count_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Mode: FUNC
+  Corner: Slow
+  Scenario: FUNC_Slow
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  sp1/rd_ptr_reg[1]/CLK (SDFFARX1_HVT)             0.00      0.00 r
+  sp1/rd_ptr_reg[1]/Q (SDFFARX1_HVT)               0.60      0.60 f
+  ctmi_12993/Y (NAND3X0_RVT)                       0.16      0.75 r
+  phfnr_buf_2751/Y (INVX1_HVT)                     0.29      1.05 f
+  ctmi_13028/Y (AND2X4_RVT)                        0.41      1.46 f
+  ctmi_13534/Y (AO22X1_RVT)                        0.22      1.68 f
+  ctmi_13533/Y (AO221X1_RVT)                       0.13      1.81 f
+  ctmi_13532/Y (AO221X1_RVT)                       0.14      1.95 f
+  ctmi_13531/Y (AO221X1_RVT)                       0.15      2.10 f
+  ctmi_13530/Y (AO221X1_RVT)                       0.15      2.25 f
+  ctmi_13529/Y (AO221X1_RVT)                       0.17      2.42 f
+  ctmi_13526/Y (OR3X2_RVT)                         0.26      2.68 f
+  ctmi_13524/Y (OA222X1_RVT)                       0.24      2.92 f
+  ctmi_13523/Y (NAND2X0_RVT)                       0.21      3.13 r
+  phfnr_buf_2771/Y (INVX0_HVT)                     0.37      3.50 f
+  ctmi_13520/Y (OA21X1_RVT)                        0.29      3.79 f
+  ctmi_13519/Y (NAND2X0_RVT)                       0.19      3.99 r
+  ctmi_2835/Y (OA221X1_RVT)                        0.26      4.25 r
+  phfnr_buf_2790/Y (INVX0_HVT)                     0.22      4.47 f
+  ctmi_13596/Y (AO221X1_RVT)                       0.26      4.73 f
+  ctmi_13591/Y (NAND2X0_RVT)                       0.26      4.98 r
+  ctmi_2836/Y (MUX41X1_RVT)                        0.37      5.36 f
+  phfnr_buf_2796/Y (INVX0_RVT)                     0.16      5.52 r
+  ctmi_2622/Y (AO222X1_RVT)                        0.31      5.83 r
+  phfnr_buf_2802/Y (INVX0_HVT)                     0.21      6.04 f
+  ctmi_14010/Y (OA21X1_RVT)                        0.24      6.28 f
+  ctmi_14007/Y (NOR4X1_RVT)                        0.28      6.56 r
+  ctmi_14014/Y (NAND2X0_RVT)                       0.14      6.70 f
+  phfnr_buf_2810/Y (INVX0_RVT)                     0.22      6.92 r
+  ctmi_2845/Y (MUX41X1_RVT)                        0.34      7.25 r
+  phfnr_buf_2816/Y (INVX0_HVT)                     0.19      7.44 f
+  ctmi_14801/Y (AND2X1_RVT)                        0.21      7.65 f
+  ctmi_2629/Y (AOI221X1_RVT)                       0.18      7.83 r
+  phfnr_buf_2822/Y (INVX1_HVT)                     0.20      8.03 f
+  ctmi_14809/Y (AO221X1_RVT)                       0.38      8.42 f
+  sp3/count_reg[3]/D (SDFFARX1_HVT)                0.00      8.42 f
+  data arrival time                                          8.42
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  sp3/count_reg[3]/CLK (SDFFARX1_HVT)              0.00     10.00 r
+  clock uncertainty                               -0.15      9.85
+  library setup time                              -0.50      9.35
+  data required time                                         9.35
+  ------------------------------------------------------------------------
+  data required time                                         9.35
+  data arrival time                                         -8.42
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.93
+
+
+
+  Startpoint: sp1/rd_ptr_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sp2/count_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Mode: FUNC
+  Corner: Slow
+  Scenario: FUNC_Slow
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  sp1/rd_ptr_reg[1]/CLK (SDFFARX1_HVT)             0.00      0.00 r
+  sp1/rd_ptr_reg[1]/Q (SDFFARX1_HVT)               0.60      0.60 f
+  ctmi_12993/Y (NAND3X0_RVT)                       0.16      0.75 r
+  phfnr_buf_2751/Y (INVX1_HVT)                     0.29      1.05 f
+  ctmi_13028/Y (AND2X4_RVT)                        0.41      1.46 f
+  ctmi_13632/Y (AO22X1_RVT)                        0.22      1.68 f
+  ctmi_13631/Y (AO221X1_RVT)                       0.14      1.82 f
+  ctmi_13630/Y (AO221X1_RVT)                       0.15      1.97 f
+  ctmi_13629/Y (AO221X1_RVT)                       0.14      2.11 f
+  ctmi_13628/Y (AO221X1_RVT)                       0.17      2.27 f
+  ctmi_13627/Y (AO221X1_RVT)                       0.17      2.44 f
+  ctmi_13624/Y (OR3X2_RVT)                         0.25      2.69 f
+  ctmi_13622/Y (OA222X1_RVT)                       0.22      2.91 f
+  ctmi_2218/Y (AND2X1_RVT)                         0.16      3.08 f
+  phfnr_buf_2770/Y (INVX0_HVT)                     0.13      3.21 r
+  ctmi_13620/Y (NAND2X0_RVT)                       0.16      3.37 f
+  ctmi_2837/Y (OAI221X1_RVT)                       0.34      3.71 r
+  ctmi_13692/Y (NAND2X0_RVT)                       0.10      3.81 f
+  ctmi_13691/Y (AOI21X1_RVT)                       0.17      3.98 r
+  ctmi_13688/Y (OA21X1_RVT)                        0.14      4.13 r
+  phfnr_buf_2794/Y (INVX0_HVT)                     0.23      4.36 f
+  ctmi_2633/Y (NAND2X0_RVT)                        0.26      4.62 r
+  phfnr_buf_2795/Y (INVX0_HVT)                     0.26      4.88 f
+  ctmi_13618/Y (AO222X1_RVT)                       0.25      5.12 f
+  ctmi_2635/Y (AOI222X1_RVT)                       0.35      5.47 r
+  ctmi_2631/Y (NAND2X0_RVT)                        0.11      5.58 f
+  ctmi_13945/Y (AO222X1_RVT)                       0.25      5.84 f
+  ctmi_13942/Y (NOR4X1_RVT)                        0.26      6.10 r
+  ctmi_13949/Y (NAND2X0_RVT)                       0.22      6.32 f
+  phfnr_buf_2811/Y (INVX0_RVT)                     0.28      6.60 r
+  ctmi_14066/Y (OA222X1_RVT)                       0.29      6.89 r
+  ctmi_14069/Y (NAND2X0_RVT)                       0.12      7.00 f
+  ctmi_2226/Y (AOI22X1_RVT)                        0.20      7.21 r
+  phfnr_buf_2821/Y (INVX0_HVT)                     0.22      7.42 f
+  ctmi_2843/Y (AOI221X1_RVT)                       0.29      7.71 r
+  phfnr_buf_2824/Y (INVX1_HVT)                     0.21      7.92 f
+  ctmi_14782/Y (AO222X1_RVT)                       0.38      8.30 f
+  sp2/count_reg[4]/D (SDFFARX1_HVT)                0.00      8.30 f
+  data arrival time                                          8.30
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  sp2/count_reg[4]/CLK (SDFFARX1_HVT)              0.00     10.00 r
+  clock uncertainty                               -0.15      9.85
+  library setup time                              -0.50      9.35
+  data required time                                         9.35
+  ------------------------------------------------------------------------
+  data required time                                         9.35
+  data arrival time                                         -8.30
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.05
+
+
+1

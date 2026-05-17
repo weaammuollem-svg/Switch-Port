@@ -1,0 +1,33 @@
+# Simulation outputs
+simv
+simv.daidir/
+csrc/
+*.vpd
+*.vcd
+*.fsdb
+*.key
+ucli.key
+novas.*
+
+# Tool databases and generated implementation work directories
+*.dlib/
+*.nlib/
+*.db
+*.ddc
+*.svf
+*.sdc.tmp
+work/
+WORK/
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# Archives
+*.zip
+*.rar
+*.7z
